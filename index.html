@@ -8,7 +8,7 @@
 <body>
 <form id="travel">
     <div class="map">
-        <p class="card"><b>Дневник путешественника по России</b></p>
+        <p id="card"><b>Дневник путешественника по России</b></p>
 
         <hr/>
         <div class="block1"> Заполните форму:
@@ -18,7 +18,7 @@
                     <br />
                     <br />
                     <br />
-                    <select id="FO" size="1" form="travel" margin-left="400px";>
+                    <select id="FO" size="1" form="travel">
                         <option value="1">Приволжский</option>
                         <option value="2">Южный</option>
                         <option value="3">Центральный</option>
@@ -34,7 +34,7 @@
                     <br />
                     <br />
                     <br />
-                    <input id="cities" type="Введите город" />
+                    <input id="cities" name="Введите город" />
 
                 </div>
 
@@ -73,9 +73,10 @@
 
         <div class="block7">
             <img class="image" src="./travel.jpeg" alt="Изображение не загрузилось"/>
-            <button class="button1">Запланировать поездку</button>
-            <button class="button2">Записать в дневник</button>
+            <input class="button1" type="button" value=" Запланировать поездку ">
+            <input class="button2" type="button" value=" Записать в дневник">
         </div>
+
     </div>
 </form>
 </body>

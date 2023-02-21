@@ -10,7 +10,7 @@ div {
     color: #56382d;
 }
 
-.card{
+#card{
     border-top: 2px dotted red; /* Линия сверху текста */
     border-bottom: 2px dotted red; /* Линия снизу текста */
     padding: 10px; /* Поля вокруг текста */
