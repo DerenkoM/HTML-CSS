@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дневник путешественника</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+<form id="travel">
+    <div class="map">
+        <p class="card"><b>Дневник путешественника по России</b></p>
+
+        <hr/>
+        <div class="block1"> Заполните форму:
+            <span>
+                <div class="block2">
+                    <label for="FO">Выберите федеральный округ:</label>
+                    <br />
+                    <br />
+                    <br />
+                    <select id="FO" size="1" form="travel" margin-left="400px";>
+                        <option value="1">Приволжский</option>
+                        <option value="2">Южный</option>
+                        <option value="3">Центральный</option>
+                        <option value="4">Северо-Западный</option>
+                        <option value="5">Уральский</option>
+                        <option value="6">Сибирский</option>
+                        <option value="7">Дальневосточный</option>
+                    </select>
+                </div>
+
+                <div class="block3">
+                    <label for="cities">Введите нужный город:</label>
+                    <br />
+                    <br />
+                    <br />
+                    <input id="cities" type="Введите город" />
+
+                </div>
+
+                <div class="block4">
+                    <label>Уже были в этом городе?</label>
+                    <br />
+                    <br />
+                    <br />
+                    <input checked="checked" type="radio" value="1" name="visiting"/> Да <br />
+                    <input type="radio" value="2" name="visiting"/> Нет <br />
+                </div>
+
+                <div class="block5">
+                    <label>Как добрались?</label>
+                    <br />
+                    <br />
+                    <br />
+                    <input type="checkbox" style="transform:scale(1.5)" > Автомобиль <br />
+                    <input type="checkbox" style="transform:scale(1.5)"  /> Автобус <br />
+                    <input type="checkbox" style="transform:scale(1.5)"  /> Поезд <br />
+                    <input type="checkbox" style="transform:scale(1.5)"  /> Самолет <br />
+                    <input type="checkbox" style="transform:scale(1.5)"  /> Море <br />
+                </div>
+
+                 <div class="block6">
+                     <label for="text">Напишите впечатления от поездки.</label>
+                     <br />
+                     <br />
+                     <textarea id="text" rows="15" cols="130">
+                     </textarea>
+                </div>
+
+            </span>
+
+        </div>
+
+        <div class="block7">
+            <img class="image" src="./travel.jpeg" alt="Изображение не загрузилось"/>
+            <button class="button1">Запланировать поездку</button>
+            <button class="button2">Записать в дневник</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
