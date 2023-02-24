@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-<form id="travel">
+<form action="http://localhost:63342/HTML-CSS/index.html?visiting=1" id="travel" method="post" >
     <div class="map">
         <p id="card"><b>Дневник путешественника по России</b></p>
 
@@ -43,8 +43,11 @@
                     <br />
                     <br />
                     <br />
-                    <input checked="checked" type="radio" value="1" name="visiting"/> Да <br />
-                    <input type="radio" value="2" name="visiting"/> Нет <br />
+                    <input id="radio-1" checked="checked" type="radio" value="1" name="visiting" >
+                    <label for="radio-1">Да</label>
+                    <br />
+                    <input id="radio-2" type="radio" value="2" name="visiting" >
+                    <label for="radio-2">Нет</label>
                 </div>
 
                 <div class="block5">
@@ -52,11 +55,16 @@
                     <br />
                     <br />
                     <br />
-                    <input type="checkbox" style="transform:scale(1.5)" > Автомобиль <br />
-                    <input type="checkbox" style="transform:scale(1.5)"  /> Автобус <br />
-                    <input type="checkbox" style="transform:scale(1.5)"  /> Поезд <br />
-                    <input type="checkbox" style="transform:scale(1.5)"  /> Самолет <br />
-                    <input type="checkbox" style="transform:scale(1.5)"  /> Море <br />
+                    <input id="checkbox-1" type="checkbox" style="transform:scale(1.5)" >
+                    <label for="checkbox-1">Автомобиль</label> <br />
+                    <input id="checkbox-2" type="checkbox" style="transform:scale(1.5)" >
+                    <label for="checkbox-2">Автобус</label> <br />
+                    <input id="checkbox-3" type="checkbox" style="transform:scale(1.5)" >
+                    <label for="checkbox-3">Поезд</label> <br />
+                    <input id="checkbox-4" type="checkbox" style="transform:scale(1.5)" >
+                    <label for="checkbox-4">Самолет</label> <br />
+                    <input id="checkbox-5" type="checkbox" style="transform:scale(1.5)" >
+                    <label for="checkbox-5">Море</label> <br />
                 </div>
 
                  <div class="block6">
@@ -68,13 +76,12 @@
                 </div>
 
             </span>
-
         </div>
 
         <div class="block7">
             <img class="image" src="./travel.jpeg" alt="Изображение не загрузилось"/>
             <input class="button1" type="button" value=" Запланировать поездку ">
-            <input class="button2" type="button" value=" Записать в дневник">
+            <input class="button2" type="submit" value=" Записать в дневник">
         </div>
 
     </div>

@@ -105,13 +105,9 @@ div {
 
 #image2 {
     margin-top: 30px;
-    width: 20%;
-    height: 20%
-    display:block; margin:0 auto; /* картинка по центру горизонтали */
-}
+    width: 300px;
+    height: 150px;
 
-.scaleY {
-    transform: scaleY(-1); /* Отражение картинки по вертикали */
 }
 
 .mark {
